@@ -1,10 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import Github from '../components/icons/Github.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1 class="">Portfolio</h1>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img 
+			  class="rounded-full w-12 h-12 mb-4" 
+			  src="https://avatars.githubusercontent.com/u/1561955?v=4" 
+			  alt="Whisperpiano picture">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hi, I'm whisperpiano 
+				<a 
+				  href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/"
+				  target="_blank"
+				  rel="noopener"
+				  class="flex justify-center items-center">
+					<Badge>Available to work</Badge>
+				</a>
+			</h1>
+			<h2 class="text-2xl opacity-80 text-wrap">
+				<span class="text-yellow-200/90">Lorem ipsum dolor</span>
+				<span class="text-red-100/90">sit amet consectetur adipisicing elit. </span>
+				<span class="opacity-80">Non harum eos sapiente aliquid, quaerat quo rem ipsam itaque quos voluptas, officia totam, quae neque eum ducimus. Rem ab iure optio.</span>
+			</h2>
+			<ul>
+				<li>
+					<a href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/">
+						<LinkedIn />
+						LinkedIn
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<Github />
+						Github
+					</a>
+				</li>
+			</ul>
+		</section>
 	</main>
 </Layout>
