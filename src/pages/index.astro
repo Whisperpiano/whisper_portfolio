@@ -1,18 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
-import LinkedIn from '../components/icons/LinkedIn.astro';
-import Github from '../components/icons/Github.astro';
+import LinkedInIcon from '../components/icons/LinkedinIcon.astro';
+import GithubIcon from '../components/icons/GithubIcon.astro';
+import SocialButton from '../components/SocialButton.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
+import BriefcaseIcon from '../components/icons/BriefcaseIcon.astro';
+import CodeIcon from '../components/icons/CodeIcon.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Projects from '../components/Projects.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+<Layout 
+  title="Whisperpiano's portfolio - Frontend developer, piano teacher & music"
+  description="Hire whisperpiano, a frontend developer, piano teacher and music lover. Available to work."
+>
+	<main class="px-4">
+		<SectionContainer class="pt-44 pb-24">
 			<img 
-			  class="rounded-full w-12 h-12 mb-4" 
+			  class="rounded-full size-12 mb-4" 
 			  src="https://avatars.githubusercontent.com/u/1561955?v=4" 
 			  alt="Whisperpiano picture">
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4">
 				Hi, I'm whisperpiano 
 				<a 
 				  href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/"
@@ -22,25 +32,49 @@ import Github from '../components/icons/Github.astro';
 					<Badge>Available to work</Badge>
 				</a>
 			</h1>
-			<h2 class="text-2xl opacity-80 text-wrap">
+			<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-700px]">
 				<span class="text-yellow-200/90">Lorem ipsum dolor</span>
 				<span class="text-red-100/90">sit amet consectetur adipisicing elit. </span>
 				<span class="opacity-80">Non harum eos sapiente aliquid, quaerat quo rem ipsam itaque quos voluptas, officia totam, quae neque eum ducimus. Rem ab iure optio.</span>
 			</h2>
-			<ul>
+			<ul class="flex gap-4 mt-4 flex-wrap">
 				<li>
-					<a href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/">
-						<LinkedIn />
+					<SocialButton 
+					  href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/">
+						<LinkedInIcon class="size-6" />
 						LinkedIn
-					</a>
+					</SocialButton>
 				</li>
 				<li>
-					<a href="">
-						<Github />
+					<SocialButton href="https://github.com/Whisperpiano">
+						<GithubIcon class="size-6" />
 						Github
-					</a>
+					</SocialButton>
+				</li>
+				<li>
+					<SocialButton href="mailto:jesusalberola90@gmail.com">
+						<MailIcon class="size-6" />
+						jesusalberola90@gmail.com
+					</SocialButton>
+					
 				</li>
 			</ul>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center">
+				<BriefcaseIcon class="size-6" />
+				Experience
+			</h2>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center">
+				<CodeIcon class="size-6" />
+				Projects
+			</h2>
+			<Projects />
+		</SectionContainer>
 	</main>
 </Layout>

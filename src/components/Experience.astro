@@ -1,0 +1,42 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+  {
+    date: 'August 2023 - Present',
+    title: 'Piano teacher',
+    company: 'Sandnes Kulturskole',
+    location: 'Sandnes, Rogaland, Norway',
+    description: 'I work as a piano teacher at Sandnes Kulturskole. I teach students of all ages and levels, from beginners to advanced players. I am responsible for developing lesson plans, teaching students how to read music, and helping them improve their playing skills. I also organize recitals and other events to showcase the students\' progress and provide them with performance opportunities.'
+  },
+  {
+    date: 'August 2021 - July 2023',
+    title: 'Piano teacher',
+    company: 'Sauda Kulturskole',
+    location: 'Sauda, Rogaland, Norway',
+    description: 'I work as a piano teacher at Sandnes Kulturskole. I teach students of all ages and levels, from beginners to advanced players. I am responsible for developing lesson plans, teaching students how to read music, and helping them improve their playing skills. I also organize recitals and other events to showcase the students\' progress and provide them with performance opportunities.'
+  },
+  {
+    date: 'January 2021 - July 2021',
+    title: 'Piano teacher',
+    company: 'Sandnes Kulturskole',
+    location: 'Sandnes, Rogaland, Norway',
+    description: 'I work as a piano teacher at Sandnes Kulturskole. I teach students of all ages and levels, from beginners to advanced players. I am responsible for developing lesson plans, teaching students how to read music, and helping them improve their playing skills. I also organize recitals and other events to showcase the students\' progress and provide them with performance opportunities.'
+  }
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3"> 
+    
+    {
+        EXPERIENCE.map((experience)=> {
+            return (
+                <li class="mb-10 ms-4">
+                    <ExperienceItem {...experience} />
+                </li>
+            )
+        })
+    }                 
+
+</ol>
+
