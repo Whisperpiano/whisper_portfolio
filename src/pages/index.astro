@@ -10,6 +10,7 @@ import CodeIcon from '../components/icons/CodeIcon.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Projects from '../components/Projects.astro';
+import ArrowUpIcon from '../components/icons/ArrowUpIcon.astro';
 ---
 
 <Layout 
@@ -17,8 +18,25 @@ import Projects from '../components/Projects.astro';
   description="Hire whisperpiano, a frontend developer, piano teacher and music lover. Available to work."
 >
 	<main class="px-4">
-		<SectionContainer class="pt-44 pb-24">
-			<img 
+		<SectionContainer class="text-center py-28">
+			<h1 class="text-white text-5xl font-semibold pb-4">Hey there! I'm <span class="bg-gradient-to-l from-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent">Jesús</span></h1>
+			<h2 class="text-white/75 text-xl font-[400]">A front-end developer, piano teacher and music composer <span class="italic font-semibold">making magic happen</span> in Stavanger, Norway.</h2>
+
+			<ul class="flex justify-center gap-6 py-14">
+				<li>
+					<SocialButton href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/">
+						<LinkedInIcon class="size-10 inline-block"/>
+					</SocialButton>
+				</li>
+				<li>
+					<SocialButton href="https://github.com/Whisperpiano">
+						<GithubIcon class="size-10 inline-block"/>
+					</SocialButton>
+				</li>
+			</ul>
+			<Badge>Available to work</Badge>
+			<h3 class="text-white/50 text-sm py-14">Currently studying Front-end Development at <a href="https://www.noroff.no/" target="_blank" class="underline text-white/70">Noroff<ArrowUpIcon class="inline size-4"/></a></h3>
+			<!-- <img 
 			  class="rounded-full size-12 mb-4" 
 			  src="https://avatars.githubusercontent.com/u/1561955?v=4" 
 			  alt="Whisperpiano picture">
@@ -58,19 +76,19 @@ import Projects from '../components/Projects.astro';
 					</SocialButton>
 					
 				</li>
-			</ul>
+			</ul> -->
 		</SectionContainer>
 
-		<SectionContainer id="experience">
+		<!-- <SectionContainer id="experience">
 			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center">
 				<BriefcaseIcon class="size-6" />
 				Experience
 			</h2>
 			<Experience />
-		</SectionContainer>
+		</SectionContainer> -->
 
 		<SectionContainer id="projects">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center justify-center">
 				<CodeIcon class="size-6" />
 				Projects
 			</h2>
