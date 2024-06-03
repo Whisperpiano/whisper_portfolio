@@ -1,9 +1,14 @@
+---
+const { pathname } = Astro.url;
+const projectsHref = pathname === '/aboutme' ? './#projects' : '/#projects';
+---
+
 <header class="sticky top-0 flex flex-row items-center justify-between py-10 px-6">
     <nav class="absolute z-[100] left-1/2 transform -translate-x-1/2 py-4 px-4 bg-neutral-800/80 rounded-full backdrop-blur border border-white/10">
         <ul class="flex flex-row gap-x-2 text-white font-medium text-sm">
-            <li><a href="#projects" class="py-2 px-4 rounded-full hover:bg-sky-300/20 hover:text-sky-100 transition">Projects</a></li>
-            <li><a href="#about" class="py-2 px-4 rounded-full hover:bg-sky-300/20 hover:text-sky-100 transition">About me</a></li>
-            <li><a href="#experience" class="py-2 px-4 rounded-full hover:bg-sky-300/20 hover:text-sky-100 transition">Resume</a></li>
+            <li><a href={projectsHref} class="py-2 px-4 rounded-full hover:bg-white/10 transition">Projects</a></li>
+            <li><a href="../aboutme" class="py-2 px-4 rounded-full hover:bg-white/10 transition">About me</a></li>
+            <li><a href="https://drive.google.com/file/d/1NZD5DrO7ZKEVEic9cvgsNBaMu7_bakxQ/view?usp=sharing" target="_blank" class="py-2 px-4 rounded-full hover:bg-white/10 transition">Resume</a></li>
         </ul>
     </nav>
 </header>

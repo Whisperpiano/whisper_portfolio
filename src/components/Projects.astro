@@ -74,7 +74,7 @@ const PROJECTS = [
 {
     PROJECTS.map(({ title, description, image, link, github, tags, color }) => {
         return (
-            <article class="group py-8">
+            <article class="group pb-20">
                 <div class="relative -z-[1] bg-gradient-to-b from-neutral-800/80 border border-white/20 rounded-xl aspect-video overflow-hidden">
                     <div class={` absolute inset-0 ${color} opacity-0 group-hover:opacity-50 transition duration-1000`}></div>
                     <img class="rounded shadow-2xl shadow-white/10 absolute top-0 left-0 group-hover:scale-105 transition duration-700" src={image} alt={`Screenshot of the project ${title}`} />

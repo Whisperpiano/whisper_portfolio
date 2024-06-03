@@ -11,14 +11,18 @@ import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Projects from '../components/Projects.astro';
 import ArrowUpIcon from '../components/icons/ArrowUpIcon.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
   title="Whisperpiano's portfolio - Frontend developer, piano teacher & music"
   description="Hire whisperpiano, a frontend developer, piano teacher and music lover. Available to work."
 >
+	<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_25%_at_50%_0%,rgba(255,255,255,0.10),rgba(255,255,255,0))]"></div>
+
 	<main class="px-4">
-		<SectionContainer class="text-center py-28">
+		<SectionContainer class="text-center py-28 min-h-[65dvh] grid place-content-center">
 			<h1 class="text-white text-5xl font-semibold pb-4">Hey there! I'm <span class="bg-gradient-to-l from-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent">Jesús</span></h1>
 			<h2 class="text-white/75 text-xl font-[400]">A front-end developer, piano teacher and music composer <span class="italic font-semibold">making magic happen</span> in Stavanger, Norway.</h2>
 
@@ -36,47 +40,29 @@ import ArrowUpIcon from '../components/icons/ArrowUpIcon.astro';
 			</ul>
 			<Badge>Available to work</Badge>
 			<h3 class="text-white/50 text-sm py-14">Currently studying Front-end Development at <a href="https://www.noroff.no/" target="_blank" class="underline text-white/70">Noroff<ArrowUpIcon class="inline size-4"/></a></h3>
-			<!-- <img 
-			  class="rounded-full size-12 mb-4" 
-			  src="https://avatars.githubusercontent.com/u/1561955?v=4" 
-			  alt="Whisperpiano picture">
-			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4">
-				Hi, I'm whisperpiano 
-				<a 
-				  href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/"
-				  target="_blank"
-				  rel="noopener"
-				  class="flex justify-center items-center">
-					<Badge>Available to work</Badge>
-				</a>
-			</h1>
-			<h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-700px]">
-				<span class="text-yellow-200/90">Lorem ipsum dolor</span>
-				<span class="text-red-100/90">sit amet consectetur adipisicing elit. </span>
-				<span class="opacity-80">Non harum eos sapiente aliquid, quaerat quo rem ipsam itaque quos voluptas, officia totam, quae neque eum ducimus. Rem ab iure optio.</span>
-			</h2>
-			<ul class="flex gap-4 mt-4 flex-wrap">
-				<li>
-					<SocialButton 
-					  href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/">
-						<LinkedInIcon class="size-6" />
-						LinkedIn
-					</SocialButton>
-				</li>
-				<li>
-					<SocialButton href="https://github.com/Whisperpiano">
-						<GithubIcon class="size-6" />
-						Github
-					</SocialButton>
-				</li>
-				<li>
-					<SocialButton href="mailto:jesusalberola90@gmail.com">
-						<MailIcon class="size-6" />
-						jesusalberola90@gmail.com
-					</SocialButton>
+			<div>
+				<button	
 					
-				</li>
-			</ul> -->
+					class="cursor-pointer bg-gray-800 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce"
+					>
+					<svg
+						class="w-5 h-5"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+						d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+						stroke-linejoin="round"
+						stroke-linecap="round"
+						></path>
+					</svg>
+				</button>
+
+			</div>
+		
 		</SectionContainer>
 
 		<!-- <SectionContainer id="experience">
@@ -88,11 +74,14 @@ import ArrowUpIcon from '../components/icons/ArrowUpIcon.astro';
 		</SectionContainer> -->
 
 		<SectionContainer id="projects">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center justify-center">
-				<CodeIcon class="size-6" />
-				Projects
-			</h2>
+			<h1 class="text-center py-10">Projects</h1>
 			<Projects />
 		</SectionContainer>
+
+		<!-- <SectionContainer id="about">
+			<About />
+		</SectionContainer> -->
+
+		<Footer />
 	</main>
 </Layout>
