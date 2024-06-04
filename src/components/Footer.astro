@@ -4,23 +4,23 @@ const { pathname } = Astro.url;
 const projectsHref = pathname === '/aboutme' ? './#projects' : '/#projects';
 ---
 
-<footer class="max-w-[840px] w-full rounded-lg shadow m-4 bg-black/20 backdrop-blur-lg mx-auto mb-10 pt-20">
+<footer class="max-w-[840px] w-full rounded-lg shadow m-4 bg-black/20 backdrop-blur-lg mx-auto mb-10">
     <hr class="h-px my-8 bg-gray-200/25 border-0 dark:bg-gray-700">
     <div class="flex justify-between pt-8">
         <div>
             <p>Made with ☕ +  🎵</p>
-            <span class="text-white/50 text-xs">Special thanks to <a href="https://github.com/midudev" class="underline">@midudev</a> </span>
+            <span class="text-white/50 text-xs">Special thanks to <a href="https://github.com/midudev" target="_blank" class="underline">@midudev</a> </span>
         </div>
         <div class="flex gap-20">
             <ul class="flex flex-col gap-3">
                 <h2 class="text-xs uppercase font-semibold">Main</h2>
-                <li><a href={projectsHref} class="text-white/50 hover:text-white/80 transition">Projects</a></li>
-                <li><a href="/aboutme" class="text-white/50 hover:text-white/80 transition">About me</a></li>
+                <li><a href={projectsHref} class="text-sm text-white/50 hover:text-white/80 transition">Projects</a></li>
+                <li><a href="/aboutme" class="text-sm text-white/50 hover:text-white/80 transition">About me</a></li>
             </ul>
             <ul class="flex flex-col gap-3">
                 <h2 class="text-xs uppercase font-semibold">Contact</h2>
-                <li><a href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" target="_blank" class="flex items-center text-white/50 hover:text-white/80 transition">LinkedIn <ArrowUpIcon class="size-5" /></a></li>
-                <li><a href="https://drive.google.com/file/d/1NZD5DrO7ZKEVEic9cvgsNBaMu7_bakxQ/view" target="_blank" class="flex items-center text-white/50 hover:text-white/80 transition">Resume <ArrowUpIcon class="size-5" /></a></li>
+                <li><a href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" target="_blank" class="flex items-center gap-1 text-sm text-white/50 hover:text-white/80 transition">LinkedIn <ArrowUpIcon class="size-4" /></a></li>
+                <li><a href="https://drive.google.com/file/d/1NZD5DrO7ZKEVEic9cvgsNBaMu7_bakxQ/view" target="_blank" class="flex items-center gap-1 text-sm  text-white/50 hover:text-white/80 transition">Resume <ArrowUpIcon class="size-4" /></a></li>
             </ul>
         </div>
     </div>

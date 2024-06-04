@@ -13,34 +13,44 @@ import Projects from '../components/Projects.astro';
 import ArrowUpIcon from '../components/icons/ArrowUpIcon.astro';
 import About from '../components/About.astro';
 import Footer from '../components/Footer.astro';
+import ContactIcon from '../components/icons/ContactIcon.astro';
 ---
 
 <Layout 
   title="Whisperpiano's portfolio - Frontend developer, piano teacher & music"
   description="Hire whisperpiano, a frontend developer, piano teacher and music lover. Available to work."
 >
-	<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_25%_at_50%_0%,rgba(255,255,255,0.10),rgba(255,255,255,0))]"></div>
+	<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_30%_at_50%_0%,rgba(255,255,255,0.10),rgba(255,255,255,0))]"></div>
 
 	<main class="px-4">
-		<SectionContainer class="text-center py-28 min-h-[65dvh] grid place-content-center">
-			<h1 class="text-white text-5xl font-semibold pb-4">Hey there! I'm <span class="bg-gradient-to-l from-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent">Jesús</span></h1>
-			<h2 class="text-white/75 text-xl font-[400]">A front-end developer, piano teacher and music composer <span class="italic font-semibold">making magic happen</span> in Stavanger, Norway.</h2>
+		<SectionContainer class="text-center py-28 min-h- grid place-content-center">
 
-			<ul class="flex justify-center gap-6 py-14">
-				<li>
-					<SocialButton href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/">
-						<LinkedInIcon class="size-10 inline-block"/>
+			<h1 class="text-white text-5xl font-semibold pb-2">Hey there! I'm <span class="bg-gradient-to-l from-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent">Jesús</span></h1>
+			<h2 class="text-white/75 text-3xl font-[400]">A front-end developer, piano teacher and music composer <span class=" font-semibold bg-gradient-to-t from-white/30 to-white/75 bg-clip-text text-transparent tracking-wide">making magic happen</span> <span>in Stavanger, Norway</span></h2>
+
+			<ul class="flex justify-center gap-6 py-16">
+				<li class="-rotate-3 translate-y-1">
+					<SocialButton href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" >
+						<LinkedInIcon class="size-6 inline-block"/>
+						LinkedIn
 					</SocialButton>
 				</li>
 				<li>
 					<SocialButton href="https://github.com/Whisperpiano">
-						<GithubIcon class="size-10 inline-block"/>
+						<GithubIcon class="size-6 inline-block"/>
+						Github
+					</SocialButton>
+				</li>
+				<li class="rotate-3 translate-y-1">
+					<SocialButton href="mailto:jesusalberola90@gmail.com" >
+						<ContactIcon class="size-6 inline-block"/>
+						Contact
 					</SocialButton>
 				</li>
 			</ul>
-			<Badge>Available to work</Badge>
-			<h3 class="text-white/50 text-sm py-14">Currently studying Front-end Development at <a href="https://www.noroff.no/" target="_blank" class="underline text-white/70">Noroff<ArrowUpIcon class="inline size-4"/></a></h3>
-			<div>
+			<h3 class="text-white/50 text-sm pb-10">Currently studying Front-end Development at <a href="https://www.noroff.no/" target="_blank" class="underline text-white/70">Noroff<ArrowUpIcon class="inline size-4"/></a></h3>
+			<Badge class="pb-16">Available to work</Badge>
+			<div class="">
 				<button	
 					onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })"
 					class="cursor-pointer bg-white/5 border border-white/10 px-3 py-3 rounded-full text-white tracking-wider shadow-xl animate-bounce hover:bg-white/10  hover:border-white/50 transition"
@@ -73,7 +83,6 @@ import Footer from '../components/Footer.astro';
 		</SectionContainer> -->
 
 		<SectionContainer id="projects">
-			<h1 class="text-center py-10">Projects</h1>
 			<Projects />
 		</SectionContainer>
 

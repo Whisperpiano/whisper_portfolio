@@ -4,6 +4,9 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			'minHeight': {
+				'hero': 'calc(100vh - 80px)',
+			},
 			'animation': {
 				'text-gradient': 'text-gradient 1.5s linear infinite',
 				'background-shine': 'background-shine 2s linear infinite'
