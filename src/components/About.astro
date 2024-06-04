@@ -3,33 +3,32 @@ import Gallery from "./Gallery.astro"
 const personalImageAlt = ["Jesus in the mountains", "Jesus with food"]
 ---
 
-<section>
-  <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
+<section class="pb-20">
+  <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row t">
       <div class="[&>p]:mb-4 [&>p>strong]:text-[#4fc9e1] text-pretty order-2 md:order-1">
         
-        <p>
+        <p class="text-white/70">
          I'm Jesús Alberola Herrero, a passionate musician and programmer from Spain. From a young age, my two great loves have been <strong class="italic">music and technology.</strong>
         </p>
     
-        <p>
+        <p class="text-white/70">
           In 2019, after a decade of intensive studies at the Villena Professional Conservatory of Music, I graduated as a <strong class="italic">piano teacher and music composer.</strong> That was when I decided to embark on a new adventure and moved to picturesque Norway. Currently, I have the honor of being a piano teacher at Sandnes Kulturskole, where I enjoy sharing my love for music with young talents.
         </p>
     
       </div>
-    
-      <!-- <img width="200" height="200" src="/me.jpg" alt={personalImageAlt[0]} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-white/20 dark:ring-white/20 " style="object-position: 50% 50%"> -->
+<!--     
+      <img width="200" height="200" src="/me.jpg" alt={personalImageAlt[0]} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-white/20 dark:ring-white/20 " style="object-position: 50% 50%"> -->
     
     </article>
   
     <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
       <div class="[&>p]:mb-4 [&>p>strong]:text-[#4fc9e1] text-pretty order-2 md:order-2">
-          <span class="text-2xl font-bold text-[#4fc9e1]">But...</span>
-            <p>
-              ... there was always an additional spark in my life: <strong class="italic">programming.</strong> Since childhood, I have been fascinated by video games and computers, and that interest never disappeared. So, in 2023, I decided to make an exciting career shift and started studying <strong class="italic"> front-end development</strong> to fulfill that latent passion.
+            <p class="text-white/70">
+              But... there was always an additional spark in my life: <strong class="italic">programming.</strong> Since childhood, I have been fascinated by video games and computers, and that interest never disappeared. So, in 2023, I decided to make an exciting career shift and started studying <strong class="italic"> front-end development</strong> to fulfill that latent passion.
             </p>
       
-            <p>
-              Now, I feel fortunate to combine my two great passions: music and programming. Every day, I find new ways to integrate musical creativity with the logic and design of web development.
+            <p class="text-white/70">
+              Now, I feel fortunate to combine my two great passions: music and programming. 
             </p>
       </div>
   
@@ -37,17 +36,17 @@ const personalImageAlt = ["Jesus in the mountains", "Jesus with food"]
     </article>
 </section>
 
-<section class="flex flex-col gap-4">
-  <h1 class="text-xl  text-center py-14 font-semibold bg-gradient-to-t from-white/30 to-white bg-clip-text text-transparent tracking-wide ">Things I enjoy</h1>
+<section class="flex flex-col gap-4 pb-20">
+  <h1 class="text-xl text-center pb-8 font-semibold bg-gradient-to-t from-white/30 to-white bg-clip-text text-transparent tracking-wide">Things I enjoy</h1>
   <div class="flex flex-col items-center justify-center gap-4 text-gray-300 md:flex-row">
     <div class="order-2 md:order-1 bg-gray-800/75 p-5 rounded-xl">
-      <h2 class="text-xl pb-2 font-bold text-[#4fc9e1]">🎵 Music</h2>
+      <h2 class="text-lg pb-2 font-bold text-[#4fc9e1]">🎵 Music</h2>
       <p>
         Music is my life. I love playing the piano and composing music. When I compose music, I am generally inspired by video game soundtracks, and therefore my music is orchestral and symphonic. However, I like everything, and that's why I play keyboards in a metal band, and I also produce trance music with my friend from Spain.
       </p>
     </div>
     <div class="order-1 md:order-2 bg-gray-800/75 p-5 rounded-xl">
-      <h2 class="text-xl pb-2 font-bold text-[#4fc9e1]">🕹️ Videogames</h2>
+      <h2 class="text-lg pb-2 font-bold text-[#4fc9e1]">🕹️ Videogames</h2>
       <p>
         I have been a gamer since I was a child. I love playing video games, especially RPGs, retro games, and indie games. I am fascinated by the storytelling, the characters, and the immersive worlds that video games offer.
       </p>
@@ -55,15 +54,15 @@ const personalImageAlt = ["Jesus in the mountains", "Jesus with food"]
   </div>
   <div class="flex flex-col items-center justify-center gap-4 text-gray-300 md:flex-row">
     <div class="order-1 md:order-2 bg-gray-800/75 p-5 rounded-xl">
-      <h2 class="text-xl pb-2 font-bold text-[#4fc9e1]">🍽️ Cook</h2>
+      <h2 class="text-lg pb-2 font-bold text-[#4fc9e1]">✈️ Travel</h2>
       <p>
-        I love cooking and experimenting with new recipes. I enjoy preparing traditional Spanish dishes, but I also like trying new flavors and cuisines from around the world. Cooking is a creative and relaxing activity that allows me to unwind and share delicious meals with my loved ones.
+        I love traveling and exploring new places. I enjoy immersing myself in different cultures, trying new foods, and meeting new people.
       </p>
     </div>
     <div class="order-1 md:order-2 bg-gray-800/75 p-5 rounded-xl">
-      <h2 class="text-xl pb-2 font-bold text-[#4fc9e1]">✈️ Travel</h2>
+      <h2 class="text-lg pb-2 font-bold text-[#4fc9e1]">🍽️ Cook</h2>
       <p>
-        I love traveling and exploring new places. I enjoy immersing myself in different cultures, trying new foods, and meeting new people.
+        I love cooking and experimenting with new recipes. I enjoy preparing traditional Spanish dishes, but I also like trying new flavors and cuisines from around the world. Cooking is a creative and relaxing activity that allows me to unwind and share delicious meals with my loved ones.
       </p>
     </div>
   </div>
