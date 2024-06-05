@@ -1,95 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
-import LinkedInIcon from '../components/icons/LinkedinIcon.astro';
-import GithubIcon from '../components/icons/GithubIcon.astro';
-import SocialButton from '../components/SocialButton.astro';
-import MailIcon from '../components/icons/MailIcon.astro';
-import BriefcaseIcon from '../components/icons/BriefcaseIcon.astro';
-import CodeIcon from '../components/icons/CodeIcon.astro';
-import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Projects from '../components/Projects.astro';
-import ArrowUpIcon from '../components/icons/ArrowUpIcon.astro';
-import About from '../components/About.astro';
-import Footer from '../components/Footer.astro';
-import ContactIcon from '../components/icons/ContactIcon.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout 
   title="Whisperpiano's portfolio - Frontend developer, piano teacher & music"
-  description="Hire whisperpiano, a frontend developer, piano teacher and music lover. Available to work."
+  description="Hire whisperpiano, a frontend developer, piano teacher and music lover."
 >
 	<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_30%_at_50%_0%,rgba(255,255,255,0.10),rgba(255,255,255,0))]"></div>
 
 	<main class="px-4">
-		<SectionContainer class="text-center py-28 min-h- grid place-content-center">
-
-			<h1 class="text-white text-5xl font-semibold pb-2">Hey there! I'm <span class="bg-gradient-to-l from-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent">Jesús</span></h1>
-			<h2 class="text-white/75 text-3xl font-[400]">A front-end developer, piano teacher and music composer <span class=" font-semibold bg-gradient-to-t from-white/30 to-white/75 bg-clip-text text-transparent tracking-wide">making magic happen</span> <span>in Stavanger, Norway</span></h2>
-
-			<ul class="flex justify-center gap-6 py-16">
-				<li class="-rotate-3 translate-y-1">
-					<SocialButton href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" >
-						<LinkedInIcon class="size-6 inline-block"/>
-						LinkedIn
-					</SocialButton>
-				</li>
-				<li>
-					<SocialButton href="https://github.com/Whisperpiano">
-						<GithubIcon class="size-6 inline-block"/>
-						Github
-					</SocialButton>
-				</li>
-				<li class="rotate-3 translate-y-1">
-					<SocialButton href="mailto:jesusalberola90@gmail.com" >
-						<ContactIcon class="size-6 inline-block"/>
-						Contact
-					</SocialButton>
-				</li>
-			</ul>
-			<h3 class="text-white/50 text-sm pb-10">Currently studying Front-end Development at <a href="https://www.noroff.no/" target="_blank" class="underline text-white/70">Noroff<ArrowUpIcon class="inline size-4"/></a></h3>
-			<Badge class="pb-16">Available to work</Badge>
-			<div class="">
-				<button	
-					onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })"
-					class="cursor-pointer bg-white/5 border border-white/10 px-3 py-3 rounded-full text-white tracking-wider shadow-xl animate-bounce hover:bg-white/10  hover:border-white/50 transition"
-					>
-					<svg
-						class="w-5 h-5"
-						stroke="currentColor"
-						stroke-width="2"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-					>
-						<path
-						d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-						stroke-linejoin="round"
-						stroke-linecap="round"
-						></path>
-					</svg>
-				</button>
-
-			</div>
-		
+		<SectionContainer id="hero" class="text-center py-28 min-h- grid place-content-center">
+			<Hero />
 		</SectionContainer>
-
-		<!-- <SectionContainer id="experience">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-2 items-center">
-				<BriefcaseIcon class="size-6" />
-				Experience
-			</h2>
-			<Experience />
-		</SectionContainer> -->
 
 		<SectionContainer id="projects">
 			<Projects />
 		</SectionContainer>
-
-		<!-- <SectionContainer id="about">
-			<About />
-		</SectionContainer> -->
-
-		<Footer />
 	</main>
 </Layout>

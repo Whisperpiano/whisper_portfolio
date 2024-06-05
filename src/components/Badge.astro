@@ -1,8 +1,10 @@
-<div {...Astro.props} class="flex items-center justify-center">
+<div 
+  {...Astro.props} 
+  class="flex items-center justify-center"
+>
     <span class="relative inline-flex overflow-hidden rounded-full p-[1px] -z-[1]">
       <span
-        class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
-      ></span>
+        class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
       <div class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-white bg-neutral-800/15 backdrop-blur-3xl whitespace-nowrap rounded-3xl">
         <slot />
       </div>

@@ -2,25 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import About from "../components/About.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout 
   title="Whisperpiano's portfolio - Frontend developer, piano teacher & music"
   description="Hire whisperpiano, a frontend developer, piano teacher and music lover. Available to work."
 >
-<div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_45%_at_50%_0%,rgba(255,255,255,0.10),rgba(255,255,255,0))]"></div>
-<main class="px-4">
+    <div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_45%_at_50%_0%,rgba(255,255,255,0.10),rgba(255,255,255,0))]"></div>
 
-    <SectionContainer class="min-h-hero pt-14">
-        <h1 class="text-xl text-center pb-8 font-semibold bg-gradient-to-t from-white/30 to-white bg-clip-text text-transparent tracking-wide ">A bit about me </h1>
-      <About />
-    </SectionContainer>
-
-    <Footer>
-
-    </Footer>
-</main>
-
-
+    <main class="px-4">
+      <SectionContainer class="min-h-hero pt-14">
+          <About />
+      </SectionContainer>
+    </main>
 </Layout>

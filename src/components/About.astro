@@ -1,11 +1,11 @@
 ---
 import Gallery from "./Gallery.astro"
-const personalImageAlt = ["Jesus in the mountains", "Jesus with food"]
 ---
 
 <section class="pb-20">
+  <h1 class="text-xl text-center pb-8 font-semibold bg-gradient-to-t from-white/30 to-white bg-clip-text text-transparent tracking-wide ">A bit about me </h1>
   <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row t">
-      <div class="[&>p]:mb-4 [&>p>strong]:text-[#4fc9e1] text-pretty order-2 md:order-1">
+      <div class="[&>p]:mb-4 [&>p]:text-pretty [&>p>strong]:text-[#4fc9e1] text-pretty order-2 md:order-1">
         
         <p class="text-white/70">
          I'm Jesús Alberola Herrero, a passionate musician and programmer from Spain. From a young age, my two great loves have been <strong class="italic">music and technology.</strong>
@@ -16,13 +16,11 @@ const personalImageAlt = ["Jesus in the mountains", "Jesus with food"]
         </p>
     
       </div>
-<!--     
-      <img width="200" height="200" src="/me.jpg" alt={personalImageAlt[0]} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-white/20 dark:ring-white/20 " style="object-position: 50% 50%"> -->
     
     </article>
   
     <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
-      <div class="[&>p]:mb-4 [&>p>strong]:text-[#4fc9e1] text-pretty order-2 md:order-2">
+      <div class="[&>p]:mb-4 [&>p]:text-pretty [&>p>strong]:text-[#4fc9e1] text-pretty order-2 md:order-2">
             <p class="text-white/70">
               But... there was always an additional spark in my life: <strong class="italic">programming.</strong> Since childhood, I have been fascinated by video games and computers, and that interest never disappeared. So, in 2023, I decided to make an exciting career shift and started studying <strong class="italic"> front-end development</strong> to fulfill that latent passion.
             </p>
@@ -31,8 +29,6 @@ const personalImageAlt = ["Jesus in the mountains", "Jesus with food"]
               Now, I feel fortunate to combine my two great passions: music and programming. 
             </p>
       </div>
-  
-      <!-- <img width="200" height="200" src="/me3.jpg" alt={personalImageAlt[1]} class="order-1 object-cover w-64 h-full p-1 md:order-1 -rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-white/20 dark:ring-white/20 " style="object-position: 50% 50%"> -->
     </article>
 </section>
 

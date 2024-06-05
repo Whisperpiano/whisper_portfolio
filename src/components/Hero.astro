@@ -1,0 +1,43 @@
+---
+import SocialButton from "./SocialButton.astro";
+import GithubIcon from "./icons/GithubIcon.astro";
+import LinkedinIcon from "./icons/LinkedinIcon.astro";
+import ContactIcon from "./icons/ContactIcon.astro";
+import ArrowUpIcon from "./icons/ArrowUpIcon.astro";
+import Badge from "./Badge.astro";
+import ScrollDownButton from "./icons/ScrollDownButton.astro";
+---
+
+<div>
+    <h1 class="text-white text-5xl font-semibold pb-2">Hey there! I'm <span class="bg-gradient-to-l from-[#57F2CC] to-[#4596FB] bg-clip-text text-transparent">Jesús</span></h1>
+	<h2 class="text-white/75 text-3xl font-[400]">A front-end developer, piano teacher and music composer <span class=" font-semibold bg-gradient-to-t from-white/30 to-white/75 bg-clip-text text-transparent tracking-wide italic">making magic happen </span>in Stavanger, Norway</h2>
+
+		<ul class="flex justify-center gap-6 py-16">
+			<li class="-rotate-3 translate-y-1">
+				<SocialButton href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" >
+					<LinkedinIcon class="size-6 inline-block"/>
+					LinkedIn
+				</SocialButton>
+			</li>
+			<li>
+				<SocialButton href="https://github.com/Whisperpiano">
+					<GithubIcon class="size-6 inline-block"/>
+					Github
+				</SocialButton>
+			</li>
+			<li class="rotate-3 translate-y-1">
+				<SocialButton href="mailto:jesusalberola90@gmail.com" >
+					<ContactIcon class="size-6 inline-block"/>
+						Contact
+				</SocialButton>
+			</li>
+        </ul>
+
+		<h3 class="text-white/50 text-sm pb-10">Currently studying Front-end Development at <a href="https://www.noroff.no/" target="_blank" class="underline text-white/70">Noroff<ArrowUpIcon class="inline size-4"/></a></h3>
+			
+        <Badge class="pb-16">Available to work</Badge>
+
+		<div>
+            <ScrollDownButton />
+		</div>
+</div>
