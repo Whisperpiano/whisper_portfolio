@@ -11,30 +11,25 @@ import PreviewIcon from './icons/PreviewIcon.astro';
 const TAGS = {
     HTML: {
         name: 'HTML5',
-        color: 'bg-[#e34f26] text-white',
         icon: HTMLIcon,
     },
 
     CSS: {
         name: 'CSS3',
-        color: 'bg-[#1572b6] text-white',
         icon: CSSIcon,
     },
 
     JavaScript: {
         name: 'JavaScript',
-        color: 'bg-[#323330] text-white',
         icon: JavaScriptIcon,
     },
 
     Astro: {
         name: 'Astro',
-        color: 'bg-[#2c2052] text-white',
         icon: AstroIcon,
     },
     Tailwind: {
         name: 'Tailwind',
-        color: 'bg-[#38b2ac] text-white',
         icon: TailwindIcon,
     },
 }
@@ -73,16 +68,16 @@ const PROJECTS = [
 {
     PROJECTS.map(({ title, description, image, link, github, tags, color }) => {
         return (
-            <article class="group pb-20">
+            <article class="group pb-14 lg:pb-20">
                 <div class="relative -z-[1] bg-gradient-to-b from-neutral-800/80 border border-white/20 rounded-xl aspect-video overflow-hidden">
                     <div class={` absolute inset-0 ${color} opacity-0 group-hover:opacity-50 transition duration-1000`}></div>
                     <img class="rounded shadow-2xl shadow-white/10 absolute top-0 left-0 group-hover:scale-105 transition duration-700" src={image} alt={`Screenshot of the project ${title}`} />
                 </div>
             
-                <ul class="flex flex-row items-center gap-x-4 py-5">
+                <ul class="flex flex-row flex-wrap items-center gap-x-4 py-5">
                     {tags.map((tag) => (
                         <li>
-                            <span class={`flex items-center gap-x-2 rounded-full text-xs font-semibold py-1 px-3 pointer-events-none ${tag.color}`}>
+                            <span class={`flex items-center gap-x-2 rounded-full text-xs font-light py-1 px-3 pointer-events-none bg-neutral-800/80 text-white/75 `}>
                                 <tag.icon class="size-3" />
                                  {tag.name}
                             </span>
@@ -90,18 +85,18 @@ const PROJECTS = [
                     ))}
                 </ul>
 
-                <h3 class="text-2xl font-semibold">{title}</h3>
+                <h3 class="text-xl lg:text-2xl font-semibold">{title}</h3>
 
-                <p class="text-lg text-white/50 font-[203] text-pretty py-2">{description}</p>
+                <p class="text-sm lg:text-lg text-white/50 font-[203] text-pretty py-2">{description}</p>
     
                 <div class="flex flex-row  gap-4 py-2">
                     <LinkButton href={github}>
-                        <CodeIcon class="size-6" />
+                        <CodeIcon class="size-5 lg:size-6" />
                         Code      
                     </LinkButton>
 
                     <LinkButton href={link}>
-                        <PreviewIcon class="size-6" />
+                        <PreviewIcon class="size-5 lg:size-6" />
                         Preview
                     </LinkButton>
                 </div>
