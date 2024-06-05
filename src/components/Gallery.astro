@@ -1,17 +1,17 @@
 ---
 const PICTURES = [
-    {src: 'gallery/1.webp', alt: 'Jesús in Altea, Spain'},
-    {src: 'gallery/2.webp', alt: 'View of the Alps from the plain'},
-    {src: 'gallery/3.webp', alt: 'Two funny mojito cups in Rhodes beach, Greece'},
-    {src: 'gallery/4.webp', alt: 'Picture of Rhodes beach, Greece'},
-    {src: 'gallery/5.webp', alt: 'Acropolis of Lindos, Greece'},
-    {src: 'gallery/6.webp', alt: 'Landscape of Rhodes, Greece'},
-    {src: 'gallery/7.webp', alt: 'Theater in Krakow, Poland'},
-    {src: 'gallery/8.webp', alt: 'Cello made with plants in Zakopane, Poland'},
-    {src: 'gallery/9.webp', alt: 'Me in Barcelona, Spain'},
-    {src: 'gallery/10.webp', alt: 'Landsape in Odda, Norway'},
-    {src: 'gallery/11.webp', alt: 'Science Museum in Valencia, Spain'},
-    {src: 'gallery/12.jpg', alt: 'Picture of snow in Sauda, Norway'}
+    {src: '/gallery/1.webp', alt: 'Jesús in Altea, Spain'},
+    {src: '/gallery/2.webp', alt: 'View of the Alps from the plain'},
+    {src: '/gallery/3.webp', alt: 'Two funny mojito cups in Rhodes beach, Greece'},
+    {src: '/gallery/4.webp', alt: 'Picture of Rhodes beach, Greece'},
+    {src: '/gallery/5.webp', alt: 'Acropolis of Lindos, Greece'},
+    {src: '/gallery/6.webp', alt: 'Landscape of Rhodes, Greece'},
+    {src: '/gallery/7.webp', alt: 'Theater in Krakow, Poland'},
+    {src: '/gallery/8.webp', alt: 'Cello made with plants in Zakopane, Poland'},
+    {src: '/gallery/9.webp', alt: 'Me in Barcelona, Spain'},
+    {src: '/gallery/10.webp', alt: 'Landsape in Odda, Norway'},
+    {src: '/gallery/11.webp', alt: 'Science Museum in Valencia, Spain'},
+    {src: '/gallery/12.jpg', alt: 'Picture of snow in Sauda, Norway'}
 ]
 ---
 
@@ -21,7 +21,7 @@ const PICTURES = [
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="grid gap-4">
             <div>
-                <img class="h-full max-w-full rounded-lg object-cover" src="gallery/3.webp" alt={PICTURES[2].alt}>
+                <img class="h-full max-w-full rounded-lg object-cover" src={PICTURES[2].src} alt={PICTURES[2].alt}>
             </div>
             <div>
                 <img class="h-full max-w-full rounded-lg object-cover" src={PICTURES[0].src} alt={PICTURES[0].alt}>
