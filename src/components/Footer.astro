@@ -12,15 +12,15 @@ const projectsHref = pathname === '/aboutme' ? './#projects' : '/#projects';
             <span class="text-white/50 text-xs">Special thanks to <a href="https://github.com/midudev" target="_blank" class="underline">@midudev</a> </span>
         </div>
         <div class="order-1 sm:order-2 flex gap-20">
-            <ul class="flex flex-col gap-3">
+            <ul class="flex flex-col gap-3 items-center sm:items-start">
                 <h2 class="text-xs uppercase font-semibold">Main</h2>
-                <li><a href={projectsHref} class="text-sm text-white/50 hover:text-white/80 transition">Projects</a></li>
-                <li><a href="/aboutme" class="text-sm text-white/50 hover:text-white/80 transition">About me</a></li>
+                <li><a href={projectsHref} class="flex text-sm text-white/50 hover:text-white/80 transition">Projects</a></li>
+                <li><a href="/aboutme" class="flex text-sm text-white/50 hover:text-white/80 transition">About me</a></li>
             </ul>
-            <ul class="flex flex-col gap-3">
+            <ul class="flex flex-col gap-3 items-center sm:items-start">
                 <h2 class="text-xs uppercase font-semibold">Contact</h2>
-                <li><a href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" target="_blank" class="flex items-center gap-1 text-sm text-white/50 hover:text-white/80 transition">LinkedIn <ArrowUpIcon class="size-4" /></a></li>
-                <li><a href="https://drive.google.com/file/d/1NZD5DrO7ZKEVEic9cvgsNBaMu7_bakxQ/view" target="_blank" class="flex items-center gap-1 text-sm  text-white/50 hover:text-white/80 transition">Resume <ArrowUpIcon class="size-4" /></a></li>
+                <li><a href="https://www.linkedin.com/in/jes%C3%BAs-alberola-herrero-896b61189/" target="_blank" class="flex items-center gap-1 text-sm text-white/50 hover:text-white/80 transition">LinkedIn<ArrowUpIcon class="size-4" /></a></li>
+                <li><a href="mailto:jesusalberola90@gmail.com" target="_blank" class="flex items-center gap-1 text-sm  text-white/50 hover:text-white/80 transition">Send email<ArrowUpIcon class="size-4" /></a></li>
             </ul>
         </div>
     </div>
