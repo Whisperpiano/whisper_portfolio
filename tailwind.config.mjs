@@ -4,12 +4,13 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
+	
 			'minHeight': {
 				'hero': 'calc(100vh - 80px)',
 			},
 			'animation': {
 				'text-gradient': 'text-gradient 1.5s linear infinite',
-				'background-shine': 'background-shine 2s linear infinite'
+				'background-shine': 'background-shine 2s linear infinite',
 			},
 			'keyframes': {
 				'text-gradient': {
@@ -24,7 +25,11 @@ export default {
 					'to': {
 						'backgroundPosition': '-200% 0'
 					},
-				}
+				},
+				'reveal': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
 			},
 		},
 	},
