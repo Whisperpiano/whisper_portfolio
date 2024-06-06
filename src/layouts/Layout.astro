@@ -4,6 +4,7 @@ import '@fontsource-variable/onest';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { ViewTransitions } from 'astro:transitions';
+import OpenGraph from '../components/OpenGraph.astro';
 
 interface Props {
 	title: string;
@@ -22,6 +23,7 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<OpenGraph />
 		<ViewTransitions />
 	</head>
 	<body class="relative">
