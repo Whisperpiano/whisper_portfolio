@@ -1,6 +1,6 @@
 <h2 align="center">
   Whisperpiano Portfolio - v1.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">jesusalberola.netlify.app</a>
+  <a href="https://jesusalberola.netlify.app/" target="_blank">jesusalberola.netlify.app</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="https://github.com/Whisperpiano/whisper_portfolio/blob/master/public/mockup.webp" />
