@@ -7,23 +7,24 @@ import TailwindIcon from './icons/TailwindIcon.astro'
 import LinkButton from './LinkButton.astro';
 import CodeIcon from './icons/CodeIcon.astro';
 import PreviewIcon from './icons/PreviewIcon.astro';
+import ReactIcon from './icons/ReactIcon.astro';
+import ReactRouterIcon from './icons/ReactRouterIcon.astro';
+import TypescriptIcon from './icons/TypescriptIcon.astro';
+import ZustandIcon from './icons/ZustandIcon.astro'
 
 const TAGS = {
     HTML: {
         name: 'HTML5',
         icon: HTMLIcon,
     },
-
     CSS: {
         name: 'CSS3',
         icon: CSSIcon,
     },
-
     JavaScript: {
         name: 'JavaScript',
         icon: JavaScriptIcon,
     },
-
     Astro: {
         name: 'Astro',
         icon: AstroIcon,
@@ -32,17 +33,51 @@ const TAGS = {
         name: 'Tailwind',
         icon: TailwindIcon,
     },
+    React: {
+        name: 'React',
+        icon: ReactIcon,
+    },
+    ReactRouter: {
+        name: 'React Router',
+        icon: ReactRouterIcon,
+    },
+    Typescript: {
+        name: 'Typescript',
+        icon: TypescriptIcon,
+    },
+    Zustand: {
+        name: 'Zustand',
+        icon: ZustandIcon,
+    }
 }
 
 const PROJECTS = [
     {
+        title: 'Bidly',
+        description: 'A modern auction house platform where I utilized advanced concepts and technologies, including TypeScript, React, Zustand, and React Hook Form. Additionally, integrated the Google Gemini API to enable users to generate AI-powered text. This project showcases my ability to build dynamic and interactive web applications with state management, form handling, and scalable architecture.',
+        image: '/projects/bidly.webp',
+        link: 'https://bidlify.netlify.app/',
+        github: 'https://github.com/Whisperpiano/Bidly',
+        tags: [TAGS.Typescript, TAGS.React, TAGS.ReactRouter, TAGS.Zustand, TAGS.Tailwind],
+        color: 'bg-gradient-to-b from-[#007cf0] to-transparent'
+    },
+    {
+        title: 'Noroff Social',
+        description: 'A modern social network for Noroff students, built with TypeScript and React. Utilized React Router for seamless navigation and integrated the Imgur API to enable users to upload images easily.',
+        image: '/projects/noroff_social.webp',
+        link: 'https://noroff-social.netlify.app/',
+        github: 'https://github.com/Whisperpiano/Social-Media-Noroff',
+        tags: [TAGS.Typescript, TAGS.React, TAGS.ReactRouter, TAGS.Tailwind],
+        color: 'bg-gradient-to-b from-[#39cbcb] to-transparent'
+    },
+    {
         title: 'SoundWaves Discoveries',
         description: 'Final project for the first year of my Front-end studies at Noroff School. Restriction of using only HTML, CSS, and vanilla JavaScript. No frameworks or libraries were used in this project.',
         image: '/projects/sw.webp',
-        link: 'https://norofffeu.github.io/FED1-PE1-Whisperpiano/index.html',
-        github: 'https://github.com/NoroffFEU/FED1-PE1-Whisperpiano',
+        link: 'https://norofffeu.github.io/SoundWaves/',
+        github: 'https://github.com/NoroffFEU/SoundWaves',
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript],
-        color: 'bg-gradient-to-b from-[#39cbcb] to-transparent'
+        color: 'bg-gradient-to-b from-[#6d3e7f] to-transparent'
     },
     {
         title: 'CSM - Community Science Museum',
@@ -51,7 +86,7 @@ const PROJECTS = [
         link: 'https://whisperpiano.github.io/CommunityScienceMuseum/index.html',
         github: 'https://github.com/Whisperpiano/CommunityScienceMuseum',
         tags: [TAGS.HTML, TAGS.CSS],
-        color: 'bg-gradient-to-b from-[#6d3e7f] to-transparent'
+        color: 'bg-gradient-to-b from-[#f1c40f] to-transparent'
     },
     {
         title: 'GameOn',
