@@ -109,10 +109,10 @@ const PROJECTS = [
                     <img class="rounded shadow-2xl shadow-white/10 absolute top-0 left-0 group-hover:scale-105 transition duration-700" src={image} alt={`Screenshot of the project ${title}`} />
                 </div>
             
-                <ul class="flex flex-row flex-wrap items-center gap-x-4 py-5">
+                <ul class="flex flex-row flex-wrap items-center gap-x-4 py-3">
                     {tags.map((tag) => (
                         <li>
-                            <span class={`flex items-center gap-x-2 rounded-full text-xs font-light py-1 px-3 pointer-events-none bg-neutral-800/80 text-white/75 `}>
+                            <span class={`flex items-center gap-x-2 rounded-full text-xs font-light py-1 px-3 pointer-events-none bg-neutral-800/80 text-white/75 mt-2`}>
                                 <tag.icon class="size-3" />
                                  {tag.name}
                             </span>
@@ -120,7 +120,7 @@ const PROJECTS = [
                     ))}
                 </ul>
 
-                <h3 class="text-white text-xl lg:text-2xl font-semibold">{title}</h3>
+                <h3 class="text-white text-xl lg:text-2xl font-semibold mt-2">{title}</h3>
 
                 <p class="text-sm lg:text-lg text-white/50 font-[203] text-pretty py-2">{description}</p>
     
