@@ -11,6 +11,10 @@ import ReactIcon from './icons/ReactIcon.astro';
 import ReactRouterIcon from './icons/ReactRouterIcon.astro';
 import TypescriptIcon from './icons/TypescriptIcon.astro';
 import ZustandIcon from './icons/ZustandIcon.astro'
+import FramerIcon from './icons/FramerIcon.astro';
+import SupabaseIcon from './icons/SupabaseIcon.astro';
+import ReactqueryIcon from './icons/ReactqueryIcon.astro';
+import ZodIcon from './icons/ZodIcon.astro';
 
 const TAGS = {
     HTML: {
@@ -48,10 +52,35 @@ const TAGS = {
     Zustand: {
         name: 'Zustand',
         icon: ZustandIcon,
+    },
+    Framer: {
+        name: 'Framer Motion',
+        icon: FramerIcon,
+    },
+    Supabase: {
+        name: 'Supabase',
+        icon: SupabaseIcon,
+    }, 
+    ReactQuery: {
+        name: 'React Query',
+        icon: ReactqueryIcon,
+    },
+    Zod: {
+        name: 'Zod',
+        icon: ZodIcon,
     }
 }
 
 const PROJECTS = [
+    {
+        title: 'Nordheim',
+        description: 'A full-stack e-commerce platform for premium, eco-friendly backpacks designed for both urban and mountain explorers. This project is built with TypeScript, React, and Zustand on the frontend, while Supabase handles authentication, database, and backend services. Featuring a seamless user experience, dynamic product pages, secure order management, and smooth animations with Framer Motion, Nordheim showcases my ability to develop scalable, high-performance web applications with a focus on UI/UX and modern development practices.',
+        image: '/projects/nordheim.webp',
+        link: 'https://nordheim.netlify.app/', // Cambia si aún no tienes un dominio
+        github: 'https://github.com/Whisperpiano/nordheim',
+        tags: [TAGS.Typescript, TAGS.React, TAGS.ReactRouter, TAGS.Zustand, TAGS.Tailwind, TAGS.Framer, TAGS.Supabase, TAGS.ReactQuery, TAGS.Zod],
+        color: 'bg-gradient-to-b from-[#92979c] to-transparent'
+    },
     {
         title: 'Bidly',
         description: 'A modern auction house platform where I utilized advanced concepts and technologies, including TypeScript, React, Zustand, and React Hook Form. Additionally, integrated the Google Gemini API to enable users to generate AI-powered text. This project showcases my ability to build dynamic and interactive web applications with state management, form handling, and scalable architecture.',
